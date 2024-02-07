@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body{
+  max-width: 1440px;
+  /* background: ; */
+  margin: auto; /* Auto */
+  overflow: auto;
+  height: 100vh;
+  /* width: 100vw; */
+  
+}
+.container{
+  background-image: url(./futuristic-bg.png);
+  background-size: cover;
+}
+.navbar ul{
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  background-color: #000000;
+}
+.navbar ul li{
+  margin: 0 15px;
+  list-style: none;
+  color: #dddddd;
+  font-size: 1.2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7% 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.play_game{
+  width: 45%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.play_game h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.play_game p{
+  padding: 30px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dddddd;
+}
+.play_game button{
+  display: inline;
+}
+.Get-started{
+  margin: 0 15px 0 0;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #f4694c;
+  border: none;
+  cursor: pointer;
+}
+.Learn-more{
+  margin: 0 15px 0 0;
+  padding: 13px 40px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  background: none;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+}
+.play-btn{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.play_btn-container{
+  position: relative ;
+  top: 120px;
+}
+.rightArrow{
+  position: relative;
+  float: right;
+  top: -40px;
+  right: -150px;
+}
+.play_btn-king{
+  font-size: 1.3rem;
+  font-weight: 300;
+  align-items: center;
+  position: relative;
+  right: -60px;
+  top: -20px;
+  z-index: 1;
+}
+.games{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10% 5%;
 }
-
-.App-link {
-  color: #61dafb;
+.games h1{
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 15% 5%;
+  text-align: center;
 }
+.type_of_games{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0 ;
+  width: 100%;
+}
+.game-character_banner{
+  height: 500px;
+  width: 290px;
+  margin-left: 0;
+  /* border: 1px solid black; */
+  overflow: hidden;
+}
+.soilder_img{
+  width: 100%; 
+  height: 360px; 
+  object-fit: cover; 
+  object-position: 75% 0;
+  /* height: 100% ;
+  width:100% ;
+  object-fit: cover;
+  object-position: 10% 100%;
+  position: relative;
+  left: -60px; */
+}
+.Wariors_img{
+  width: 100%; 
+  height: 360px; 
+  object-fit: cover; 
+  object-position: 50% 0;
+}
+.pubjiken_img{
+  width: 100%; 
+  height: 360px; 
+  object-fit: cover; 
+  object-position: 50% 0;
+}
+.garela_img{
+  width: 100%; 
+  height: 360px; 
+  object-fit: cover; 
+  object-position: 55% 0;
+}
+.soldier-War{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5%;
+}
+.solder_game{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -113px;
+  backdrop-filter: blur(20px);
+}
+.the-war{
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+.action{
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 200;
+  padding: 4px 0;
+}
+.download{
+  padding: 10px 12px;
+  margin-right: 5%;
+  border: none;
+  background-color: #f4694c;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 200;
+  cursor: pointer;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  color: #e2e1e1;
+  /* padding: 40px 30px; */
+  padding: 8% 5%;
+  background: #000108;
+}
+.footer_play{
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 20px 0;
+}
+.social_media{
+  display: inline-block;
+}
+.social_media img{
+  margin: 10px 5px 0 0;
+  cursor: pointer;
+}
+.footer_option-logo{
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+
+}
+.footer_option{
+  display: block;
+}
+.footer_option h6{
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 20px 0;
+}
+.footer_option ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.footer_option ul li{
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+.line{
+  height: 2px;
+  width: 100%;
+  background-color: #686565;
+}
+.blank{
+  padding: 3% 100%;
+  background-color: #01000a;
+}
+.copyright{
+  width: 100%;
+  padding: 20px 20px;
+  background-color: #000108;
+  color: #dddddd;
+  font-size: 1rem;
+  font-weight: 300;
 }
